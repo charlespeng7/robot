@@ -28,14 +28,13 @@ pipeline {
                  steps {
                     echo 'Test Module1--01 stage ...'
                     sh 'pwd'
-                    sh 'cd '
                     sh 'pip install -r res.txt'
                     }
                 }
               stage('接口测试') {
                  steps {
                     echo 'Test Module1--02 stage ...'
-                    sh 'python3 test.py'
+                    sh 'python3 ./test.py'
                     }
                 }
                stage('UI自动化测试') {
