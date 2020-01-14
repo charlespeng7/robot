@@ -27,9 +27,11 @@ pipeline {
               stage('环境测试'){
                  steps {
                     echo 'Test Module1--01 stage ...'
+                    dir('/robot'){
                     sh 'pwd'
                     sh 'pip install -r res.txt'
                     }
+                  }
                 }
               stage('接口测试') {
                  steps {
