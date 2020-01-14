@@ -29,6 +29,7 @@ pipeline {
                     echo 'Test Module1--01 stage ...'
                     dir('/robot'){
                     sh 'pwd'
+                    sh 'ls'
                     sh 'pip install -r res.txt'
                     }
                   }
