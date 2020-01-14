@@ -27,6 +27,8 @@ pipeline {
               stage('环境测试'){
                  steps {
                     echo 'Test Module1--01 stage ...'
+                    sh 'pwd'
+                    sh 'cd '
                     sh 'pip install -r res.txt'
                     }
                 }
