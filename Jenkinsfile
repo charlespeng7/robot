@@ -30,14 +30,12 @@ pipeline {
                     dir('/robot'){
                     sh 'pwd'
                     sh 'ls'
-                    sh 'pip install -r res.txt'
                     }
                   }
                 }
               stage('接口测试') {
                  steps {
                     echo 'Test Module1--02 stage ...'
-                    sh 'python3 ./test.py'
                     }
                 }
                stage('UI自动化测试') {
